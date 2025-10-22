@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Sprint {{sprintDetails?.sprintName?sprintDetails?.sprintName:''}}</h2>
+    <div  class="card-container">
+       <div class="card" *ngFor="let story of allocatedstories">
+        <div class="card-title">
+            <span>{{ story?.name }}</span>
+            <span>{{ story?.point }}</span>
+        </div>
+        <div class="cardDesc">
+            {{ story?.desc }}
+        </div>
+       </div>
+    </div>
+</div>

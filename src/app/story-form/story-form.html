@@ -1,0 +1,13 @@
+<div>
+    <form class="form-style" [formGroup]="storyForm" (ngSubmit)="formSubmit()">
+        <h2>Add Story Form</h2>
+        <label for="name">Sprint Name</label>
+        <input type="text" formControlName="name">
+        <label for="point">Point</label>
+        <input type="number" formControlName="point">
+        <label for="desc">Desc</label>
+        <input type="text" formControlName="desc">
+        <button type="submit">Add Story</button>
+    </form>
+
+</div>

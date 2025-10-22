@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="sprintForm" class="form-style">
+        <h2>Sprint Calculator</h2>
+        <label for="Sprint Name" >SprintName</label>
+        <input type="text" formControlName="sprintName">
+        <label for="Sprint Point">Sprint Point</label>
+        <input type="number" formControlName="sprintCap">
+        <br>
+        <button type="submit" (click)="storyCalculation()">Generate Sprint</button>
+        <button type="button" (click)="resetStories()">Clear Stories</button>
+        <button type="reset" (click)="resetSprint()">Clear Sprint</button>
+    </form>
+</div>
