@@ -40,7 +40,7 @@ export class Story {
 
       }
       console.log(sum, 'sum')
-      if (sum <= cap && selectedStories.length <=avail) {
+      if (sum <= cap) {
         selectedStories = avail
       }
     }
